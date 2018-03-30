@@ -1,16 +1,24 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const config = require("./settings.json");
-const fs = require('fs');
 
+var prefix = ("!")
 
-bot.login(config.discord_token);
-
-
-bot.on('message', function (message) {
-    
+bot.on('ready', function() {
+    bot.user.setGame("Bot pour BoogieWars");
+    console.log("Connecter");
 });
 
-bot.on('ready', function () {
-        console.log('Bot en ligne !!')
+bot.login(process.env.TOKEN)
+
+
+bot.on('message', message =>{
+    if (message.content === prefix + "help"){
+        message.channel.sendMessage("Liste des commandes arrives !");
+
+    }
+
+    if (message.content ==="Salut"){
+        message.reply("Salut a toi :)");
+        console.log("Commande reply salut faite !")
+    }
 });
