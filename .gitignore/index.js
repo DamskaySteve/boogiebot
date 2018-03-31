@@ -27,15 +27,3 @@ bot.on ("guildMemberAdd", member => {
 	member.guild.channels.find("name", "acceuil").send('Bienvenue sur BoogieWars ! sois actif et respectueux !')
 
 });
-
-if (message.content === prefix + help){
-	var embed = new Discord.RichEmbed()
-		.setTitle("**Liste des commandes**")
-		.setDescription("Commandes du bot :")
-		.addField("!pc","Vous ajoute le grade PC","**!ps4**","Vous ajoute le grade ps4", true)
-		.setColor("0x2E64FE")
-		.setFooter("Bonne aventure sur BoogieWars !")
-	message.channel.sendEmbed(embed);
-	}
-});
-
