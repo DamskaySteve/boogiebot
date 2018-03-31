@@ -12,10 +12,15 @@ bot.login(process.env.TOKEN)
 
 
 bot.on('message', message =>{
-    if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes arrives !");
-
-    }
+	if (message.content === prefix + help){
+	var embed = new Discord.RichEmbed()
+		.setTitle("**Liste des commandes**")
+		.setDescription("Commandes du bot :")
+		.addField("!pc","Vous ajoute le grade PC","**!ps4**","Vous ajoute le grade ps4", true)
+		.setColor("0x2E64FE")
+		.setFooter("Bonne aventure sur BoogieWars !")
+	message.channel.sendEmbed(embed);
+	}
 
     if (message.content ==="Salut"){
         message.reply("Salut a toi :)");
