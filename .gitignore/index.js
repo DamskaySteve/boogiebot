@@ -22,3 +22,9 @@ bot.on('message', message =>{
         console.log("Commande reply salut faite !")
     }
 });
+
+bot.on ("guildMemberAdd", member => {
+	member.guild.channels.find("name", "acceuil").send('Bienvenue ${member} sur BoogieWars ! sois actif et respectueux !')
+
+})
+
