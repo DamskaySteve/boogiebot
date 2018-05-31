@@ -42,10 +42,11 @@ bot.on('message', message =>{
         console.log("Commande reply salut faite !")
     }
 	
+	
 });
 
 
 bot.on ("guildMemberAdd", member => {
-	member.guild.channels.find("name", "acceuil").send('Un luminex est aparue ! Bienvenue sur Luminex !')
+	member.guild.channels.find("name", "bienvenue").send('Un luminex est aparue ! Bienvenue sur Luminex !')
 
 });
