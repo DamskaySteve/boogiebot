@@ -32,6 +32,11 @@ bot.on('message', message =>{
         console.log("Commande reply salut faite !")
     }
 	
+	if (message.content ==="!update"){
+        message.reply("Mise a jour en cours...");
+        console.log("Commande reply salut faite !")
+    }
+	
 });
 
 
