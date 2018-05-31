@@ -16,7 +16,24 @@ bot.on('message', message =>{
         message.reply("Salut a toi :)");
         console.log("Commande reply salut faite !")
     }
+	
+        if (message.content ==="Yo"){
+        message.reply("Yo tu vas bien");
+        console.log("Commande reply salut faite !")
+    }
+	
+	if (message.content ==="Oue"){
+        message.reply("<3");
+        console.log("Commande reply salut faite !")
+    }
+	
+	if (message.content ==="Qui est la"){
+        message.reply("Moi chuis la mec !");
+        console.log("Commande reply salut faite !")
+    }
+	
 });
+
 
 bot.on ("guildMemberAdd", member => {
 	member.guild.channels.find("name", "acceuil").send('Un luminex est aparue ! Bienvenue sur Luminex !')
