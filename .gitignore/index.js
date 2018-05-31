@@ -19,6 +19,6 @@ bot.on('message', message =>{
 });
 
 bot.on ("guildMemberAdd", member => {
-	member.guild.channels.find("name", "acceuil").send('Bienvenue sur BoogieWars ! sois actif et respectueux !')
+	member.guild.channels.find("name", "acceuil").send('Un luminex est aparue ! Bienvenue sur Luminex !')
 
 });
