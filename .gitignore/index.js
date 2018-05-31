@@ -37,6 +37,11 @@ bot.on('message', message =>{
         console.log("Commande reply salut faite !")
     }
 	
+	if (message.content ==="Top1"){
+        message.reply("Waw ! Quel joueur pro ! GG !");
+        console.log("Commande reply salut faite !")
+    }
+	
 });
 
 
