@@ -15,6 +15,10 @@ bot.on('message', message =>{
     if (message.content ==="Salut"){
         message.reply("Salut a toi :)");
         console.log("Commande reply salut faite !")
+	    
+        if (message.content ==="Yo"){
+        message.reply("Yo mon rheys !");
+        console.log("Commande reply salut faite !")
     }
 });
 
