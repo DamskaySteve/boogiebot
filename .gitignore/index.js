@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 var prefix = ("!")
 
 bot.on('ready', function() {
-    bot.user.setGame("Bot pour Luminex");
+    bot.user.setGame("Bot pour tets");
     console.log("Connecter");
 });
 
